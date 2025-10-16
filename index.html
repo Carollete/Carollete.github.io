@@ -26,14 +26,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="feriaVirtual.html">FERIA HOGAR</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="home.html">FERIA HOGAR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="feriaVirtual.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Acerca de mi</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Espacios</a></li>
-                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Store</a></li> -->
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="home.html">Home</a></li>
+                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Espacios</a></li> -->
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Acerca de mi</a></li>                        
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">INFO</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,10 @@
                     </div>
                     
                     <a href=# class="image-link" onclick="mostrarModal('armario')" >
-						
+						<div class="simbolo">
+                           <img src="assets/click.ico" alt="Símbolo">
+                            <!-- O puedes usar un carácter de fuente, como: <span class="simbolo-texto">&#10003;</span> -->
+                        </div>
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/perchero.jpg" alt="..." />
 					</a>
                     <div class="product-item-description d-flex me-auto">
@@ -75,7 +78,11 @@
                         </div>
                     </div>
                     <a href=# class="image-link" onclick="mostrarModal('zapatero')" >
-                       <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/zapatero.jpg" alt="..." />
+                        <div class="simbolo">
+                           <img src="assets/click.ico" alt="Símbolo">
+                            <!-- O puedes usar un carácter de fuente, como: <span class="simbolo-texto">&#10003;</span> -->
+                        </div>
+                        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/zapatero.jpg" alt="..." />
                     </a>
                    
                     <div class="product-item-description d-flex ms-auto">
@@ -99,14 +106,34 @@
                         </div>
                     </div>
                     <a href=# class="image-link" onclick="mostrarModal('decoracion')" >
+                        <div class="simbolo">
+                           <img src="assets/click.ico" alt="Símbolo">
+                            <!-- O puedes usar un carácter de fuente, como: <span class="simbolo-texto">&#10003;</span> -->
+                        </div>
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/repisa.jpg" alt="..." />
-                     </a>
+                    </a>
                     <div class="product-item-description d-flex me-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">Cada objeto que te rodea dice algo de tí, escógelo con amor y consciencia.</p></div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <!-- <span class="section-heading-upper">Our Promise</span> -->
+                                <span class="section-heading-lower">PARA TI</span>
+                            </h2>
+                            <p class="mb-0">¡Gracias por confiar en mí y por ser parte de esta ola de consciencia! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer class="footer text-faded text-center py-5">
             <div class="container"><p class="m-0 small">Copyright &copy; Hecho por Gavilán Carolina 2025</p></div>
         </footer>
@@ -137,68 +164,121 @@
             const productos = {
             armario: [
                 {
+                nombre: 'Cartera Roja',
+                descripcion: '8x8,5x4 cm.',
+                precio: 1000,
+                imagen: 'assets/carterita.png'
+                },
+                {
+                nombre: 'Dije Yacaré',
+                descripcion: '',
+                precio: 500,
+                imagen: 'assets/yacare.png'
+                }
+/*                 {
                 nombre: 'Buzo',
                 descripcion: 'Buzo Otoño, Invierno, talla M.',
                 precio: 3500,
-                imagen: 'assets/img/repisa.jpg'
+                imagen: 'assets/buzo.jpg'
                 },
                 {
                 nombre: 'Vestido Rojo',
                 descripcion: 'Vestido elegante color rojo, talla S.',
                 precio: 4000,
-                imagen: 'assets/img/repisa.jpg'
+                imagen: 'assets/carterita.jpg'
                 },
                 {
                 nombre: 'Vestido Rojo',
                 descripcion: 'Vestido elegante color rojo, talla S.',
                 precio: 4000,
-                imagen: 'assets/img/repisa.jpg'
-                },
-                {
-                nombre: 'Vestido Rojo',
-                descripcion: 'Vestido elegante color rojo, talla S.',
-                precio: 4000,
-                imagen: 'E:/misCodigos/FERIA/angelitos.png'
-                },
-                {
-                nombre: 'Vestido Rojo',
-                descripcion: 'Vestido elegante color rojo, talla S.',
-                precio: 4000,
-                imagen: 'E:/misCodigos/FERIA/angelitos.png'
-                }
+                imagen: 'assets/carterita.jpg'
+                } */
             ],
             zapatero: [
                 {
-                nombre: 'Camisa de Lino',
-                descripcion: 'Camisa de lino blanca, talla L.',
-                precio: 2800,
-                imagen: 'prenda2a.jpg'
+                nombre: 'Zapatilla deportiva',
+                descripcion: 'Marca Perfect Steps , Talle 41.',
+                precio: 25000,
+                imagen: 'assets/zapatilla.png'
                 },
                 {
-                nombre: 'Camisa Azul',
-                descripcion: 'Camisa casual color azul, talla M.',
-                precio: 2900,
-                imagen: 'prenda2b.jpg'
-                }
+                nombre: 'Zueco',
+                descripcion: 'Color negro, Talle 35.',
+                precio: 10000,
+                imagen: 'assets/tacon.png'
+                },
+                 {
+                nombre: 'Zapato dama',
+                descripcion: 'Color negro , Talle 35.',
+                precio: 5000,
+                imagen: 'assets/negro.png'
+                },
+                 {
+                nombre: 'Zapato Dama 2',
+                descripcion: 'Color negro , Talle 35.',
+                precio: 10000,
+                imagen: 'assets/dama.png'
+                },
+                 {
+                nombre: 'Zapato fiesta',
+                descripcion: 'Color dorado, Talle 35.',
+                precio: 5000,
+                imagen: 'assets/dorado.png'
+                },
             ],
             decoracion: [
                 {
                 nombre: 'Vinoteca',
-                descripcion: 'Para regalar, talla mediano.',
-                precio: 2800,
-                imagen: 'E:/misCodigos/FERIA/vinoteca.png'
+                descripcion: 'Nuevo,38x38x15 cm.',
+                precio: 35000,
+                imagen: 'assets/vinoteca.png'
                 },
                 {
-                nombre: 'Angelitos',
-                descripcion: 'Porcelana, tamaño mediano',
-                precio: 2900,
-                imagen: 'E:/misCodigos/FERIA/angelitos.png'
+                nombre: 'Angelitos querubines',
+                descripcion: 'Material:cerámica, 13x7.5x7 cm.',
+                precio: 10000,
+                imagen: 'assets/angelitos.png'
                 },
                  {
-                nombre: 'Carterita Roja',
-                descripcion: 'Coqueto, talla pequeño',
-                precio: 2900,
-                imagen: 'E:/misCodigos/FERIA/carterita.png'
+                nombre: 'Alhajero Caja Musical',
+                descripcion: 'Con espejo. Le falta una pata trasera. 13x16x11 cm',
+                precio: 5000,
+                imagen: 'assets/cajita.png'
+                },
+                 {
+                nombre: 'Velador alhajero',
+                descripcion: '25x18.5x8 cm.',
+                precio: 20000,
+                imagen: 'assets/velador.png'
+                },
+                 {
+                nombre: 'Cofre Cisne',
+                descripcion: 'Material:porcelana, 12.5x8.5 cm.',
+                precio: 20000,
+                imagen: 'assets/cisne.png'
+                }, {
+                nombre: 'Jardinero',
+                descripcion: 'Material:porcelana, Alto 12 cm, Ancho 9 cm. Excelente estado',
+                precio: 10000,
+                imagen: 'assets/jardinero.png'
+                },
+                 {
+                nombre: 'Angelita',
+                descripcion: 'Material: cerámica, 15x12 cm.',
+                precio: 5000,
+                imagen: 'assets/angela.png'
+                },
+                 {
+                nombre: ' Adorno Reloj ',
+                descripcion: 'Torre Eiffel, 16x11x4 cm.',
+                precio: 1000,
+                imagen: 'assets/reloj.png'
+                },
+                 {
+                nombre: 'Alhajero Corazón',
+                descripcion: 'Con espejo, 6x8x8 cm.',
+                precio: 5000,
+                imagen: 'assets/alajero.png'
                 }
             ]
             };

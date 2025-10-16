@@ -11205,8 +11205,27 @@ p {
 
     /* (Opcional) Un ligero zoom para más dinamismo */
     .image-link:hover img {
-      transform: scale(1.05);
+      transform: scale(1.05);/* La imagen se agranda un poco */
     }
 
+.simbolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Centrado y oculto inicialmente */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición suave para el símbolo */
+  z-index: 1; /* Para que el símbolo esté encima de la imagen */
+}
 
+.simbolo img {
+  width: 50px; /* Ajusta el tamaño del símbolo */
+  height: auto;
+}
+
+
+.image-link:hover .simbolo {
+  transform: translate(-50%, -50%) scale(1); /* Muestra el símbolo escalando */
+  opacity: 1; /* Hace visible el símbolo */
+}    
 
