@@ -143,10 +143,15 @@
          <!-- Modal -->
         <div id="modal" class="modal">
             <div class="modal-contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <div id="galeria" class="galeria"></div>
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <div id="galeria" class="galeria"></div>
+                            
+                <button class="button-close" onclick="cerrarModal()" >Cerrar</button>    
+              
             </div>
+
         </div>
+                  
 
         <!-- Lista de Compras -->
         <div id="lista-compras">
@@ -160,6 +165,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
         <script>
             // script.js
+            
 
             const productos = {
             armario: [
@@ -312,6 +318,12 @@
             function cerrarModal() {
             document.getElementById('modal').style.display = 'none';
             }
+            // Cierra el modal si se hace clic fuera del contenido
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("modal")) {
+                    document.getElementById("modal").style.display = "none";
+                }
+            }
 
             function agregarAlCarrito(nombre, precio) {
             const existe = carrito.some(item => item.nombre === nombre);
@@ -348,7 +360,7 @@
                 return;
             }
 
-            let mensaje = 'Hola, estoy interesado en las siguientes prendas:%0A';
+            let mensaje = 'Hola, estoy interesado en:%0A';
             let total = 0;
             carrito.forEach(item => {
                 mensaje += `- ${item.nombre} - $${item.precio}%0A`;
@@ -361,6 +373,7 @@
             window.open(url, '_blank');
             
             }
+            
         </script>
 
         <!-- Core theme JS-->
