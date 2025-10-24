@@ -5319,6 +5319,9 @@ textarea.form-control-lg {
   border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
+  position: fixed;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+
 }
 
 .modal-backdrop {
@@ -5328,7 +5331,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--bs-backdrop-zindex);
+ 
   width: 100vw;
   height: 100vh;
   background-color: var(--bs-backdrop-bg);
@@ -11053,6 +11056,7 @@ p {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.8);
+   
 }
 
 
@@ -11144,7 +11148,7 @@ p {
   border-top-left-radius: 10px;
   box-shadow: -2px -2px 10px rgba(0,0,0,0.1);
   padding: 15px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #lista-compras h2 {
