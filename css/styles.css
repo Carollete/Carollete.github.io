@@ -137,11 +137,7 @@ h2, .h2 {
     font-size: 2rem;
   }
 }
-@media (max-width: 480px) {
-  h2, .h2 {
-    font-size: 28px;
-  }
-}
+
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
@@ -10878,7 +10874,7 @@ p {
 }
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
