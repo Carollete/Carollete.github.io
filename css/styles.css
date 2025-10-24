@@ -11106,6 +11106,13 @@ p {
   border-radius: 4px;
 }
 
+  /* Aplica el efecto de zoom al pasar el cursor */
+.item:hover img {
+    transform: scale(1.5); /* Escala la imagen un 20% más grande */
+  }
+
+
+
 .item h3 {
   margin: 10px 0 5px;
 }

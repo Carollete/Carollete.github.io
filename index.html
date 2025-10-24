@@ -301,7 +301,10 @@
 
                 item.innerHTML = `
                 <a href="${producto.imagen}" data-lightbox="${seccion}" data-title="${producto.nombre} - ${producto.descripcion} - $${producto.precio}">
-                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                   
+                         <img  src="${producto.imagen}" alt="${producto.nombre}">
+                   
+                    
                 </a>
                 <h3>${producto.nombre}</h3>
                 <p>${producto.descripcion}</p>
@@ -375,7 +378,7 @@
             }
             
         </script>
-
+        
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
