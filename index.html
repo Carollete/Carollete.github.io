@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+git --version<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -59,7 +59,7 @@
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/perchero.jpg" alt="..." />
 					</a>
                     <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada prenda es seleccionada con total dedicación y cuidado. Cada vez que adquieras una prenda, es dar una nueva oportunidad de valor a la misma.</p></div>
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada vez que adquieras una prenda, es dar una nueva oportunidad de valor a la misma.</p></div>
                     </div>
                 </div>
             </div>F
@@ -118,6 +118,32 @@
                 </div>
             </div>
         </section>
+         <section class="page-section">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item-title d-flex" >
+                        <div class="bg-faded p-5 d-flex ms-auto rounded" >
+                            <h2 class="section-heading mb-0">
+                                <span class="section-heading-upper">Garaje</span>
+                                <span class="section-heading-lower">Depósito</span>
+                            </h2>
+                            <!-- <div class="punto" style="top: 60%; left: 30%;" onclick="mostrarModal('armario')"></div> -->
+                        </div>
+                    </div>
+                    
+                    <a href=# class="image-link" onclick="mostrarModal('deposito')" >
+						<div class="simbolo">
+                           <img src="assets/click.ico" alt="Símbolo">
+                            <!-- O puedes usar un carácter de fuente, como: <span class="simbolo-texto">&#10003;</span> -->
+                        </div>
+                        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/garaje.jpg" alt="..." />
+					</a>
+                    <div class="product-item-description d-flex me-auto">
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada cosa en su lugar, hace al todo en armonía funcionar.</p></div>
+                    </div>
+                </div>
+            </div>F
+        </section>
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -144,6 +170,7 @@
         <div id="modal" class="modal">
             <div class="modal-contenido">
                 <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <h2 id="modal-titulo" class="modal-titulo"></h2>
                 <div id="galeria" class="galeria"></div>
                             
                 <button class="button-close" onclick="cerrarModal()" >Cerrar</button>    
@@ -173,13 +200,17 @@
                 nombre: 'Cartera Roja',
                 descripcion: '8x8,5x4 cm.',
                 precio: 1000,
-                imagen: 'assets/carterita.png'
+                imagen: 'assets/carterita.png',
+                reservado: true,
+                vendido: false
                 },
                 {
                 nombre: 'Dije Yacaré',
                 descripcion: '',
                 precio: 500,
-                imagen: 'assets/yacare.png'
+                imagen: 'assets/yacare.png',
+                reservado: false,
+                vendido: false
                 }
 /*                 {
                 nombre: 'Buzo',
@@ -198,118 +229,212 @@
                 descripcion: 'Vestido elegante color rojo, talla S.',
                 precio: 4000,
                 imagen: 'assets/carterita.jpg'
-                } */
+                }, */
+            ],
+            deposito: [
+                {
+                nombre: 'Bicicleta fija',
+                descripcion: 'En perfecto estado',
+                precio: 50000,
+                imagen: 'assets/bicifija.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Tabla de planchar',
+                descripcion: '',
+                precio: 10000,
+                imagen: 'assets/tabla.png',
+                reservado: false,
+                vendido: false
+                
+                },
+                {
+                nombre: 'Bota ortopédica',
+                descripcion: 'Talle 36',
+                precio: 23000,
+                imagen: 'assets/bota.png',
+                reservado: false,
+                vendido: false
+                
+                },
+
             ],
             zapatero: [
                 {
-                nombre: 'Zapatilla deportiva',
+                nombre: 'Zapatilla deportiva ',
                 descripcion: 'Marca Perfect Steps , Talle 41.',
                 precio: 25000,
-                imagen: 'assets/zapatilla.png'
+                imagen: 'assets/zapatilla.png',
+                reservado: false,
+                vendido: false
                 },
                 {
                 nombre: 'Zueco',
                 descripcion: 'Color negro, Talle 35.',
                 precio: 10000,
-                imagen: 'assets/tacon.png'
+                imagen: 'assets/tacon.png',
+                reservado: false,
+                vendido: false
                 },
                  {
-                nombre: 'Zapato dama',
+                nombre: 'Zapato Dama',
                 descripcion: 'Color negro , Talle 35.',
                 precio: 5000,
-                imagen: 'assets/negro.png'
+                imagen: 'assets/negro.png',
+                reservado: false,
+                vendido: false
                 },
                  {
-                nombre: 'Zapato Dama 2',
-                descripcion: 'Color negro , Talle 35.',
+                nombre: 'Zapato Dama Elegante',
+                descripcion: 'Color negro , Talle 36.',
                 precio: 10000,
-                imagen: 'assets/dama.png'
+                imagen: 'assets/dama.png',
+                reservado: false,
+                vendido: false
                 },
                  {
-                nombre: 'Zapato fiesta',
+                nombre: 'Zapato Fiesta Dorada',
                 descripcion: 'Color dorado, Talle 35.',
                 precio: 5000,
-                imagen: 'assets/dorado.png'
-                },
+                imagen: 'assets/dorado.png',
+                reservado: false,
+                vendido: false
+                }
             ],
             decoracion: [
                 {
                 nombre: 'Vinoteca',
                 descripcion: 'Nuevo,38x38x15 cm.',
                 precio: 35000,
-                imagen: 'assets/vinoteca.png'
+                imagen: 'assets/vinoteca.png',
+                reservado: false,
+                vendido: false
                 },
                 {
                 nombre: 'Angelitos querubines',
                 descripcion: 'Material:cerámica, 13x7.5x7 cm.',
                 precio: 10000,
-                imagen: 'assets/angelitos.png'
+                imagen: 'assets/angelitos.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: 'Alhajero Caja Musical',
                 descripcion: 'Con espejo. Le falta una pata trasera. 13x16x11 cm',
                 precio: 5000,
-                imagen: 'assets/cajita.png'
+                imagen: 'assets/cajita.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: 'Velador alhajero',
                 descripcion: '25x18.5x8 cm.',
                 precio: 20000,
-                imagen: 'assets/velador.png'
+                imagen: 'assets/velador.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: 'Cofre Cisne',
                 descripcion: 'Material:porcelana, 12.5x8.5 cm.',
                 precio: 20000,
-                imagen: 'assets/cisne.png'
+                imagen: 'assets/cisne.png',
+                reservado: false,
+                vendido: false
                 }, {
                 nombre: 'Jardinero',
                 descripcion: 'Material:porcelana, Alto 12 cm, Ancho 9 cm. Excelente estado',
                 precio: 10000,
-                imagen: 'assets/jardinero.png'
+                imagen: 'assets/jardinero.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: 'Angelita',
                 descripcion: 'Material: cerámica, 15x12 cm.',
                 precio: 5000,
-                imagen: 'assets/angela.png'
+                imagen: 'assets/angela.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: ' Adorno Reloj ',
                 descripcion: 'Torre Eiffel, 16x11x4 cm.',
                 precio: 1000,
-                imagen: 'assets/reloj.png'
+                imagen: 'assets/reloj.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Almohadita Boca Junior',
+                descripcion: 'Disponibilidad 25 unidades',
+                precio: 10000,
+                imagen: 'assets/boca.png',
+                reservado: false,
+                vendido: false
                 },
                  {
                 nombre: 'Alhajero Corazón',
                 descripcion: 'Con espejo, 6x8x8 cm.',
                 precio: 5000,
-                imagen: 'assets/alajero.png'
+                imagen: 'assets/alajero.png',
+                reservado: false,
+                vendido: false
                 }
             ]
             };
+            
+            const nombresSeccion = {
+            armario: 'Habitación · Armario',
+            zapatero: 'Habitación · Zapatero',
+            decoracion: 'Habitación · Deco Home',
+            deposito: 'Garaje · Depósito'
 
+
+        };
+            
             let carrito = [];
 
             function mostrarModal(seccion) {
             const galeria = document.getElementById('galeria');
+            const tituloModal = document.getElementById('modal-titulo');
             galeria.innerHTML = '';
+
+            if (tituloModal) {
+                tituloModal.textContent = nombresSeccion[seccion] || 'Productos';
+            }
 
             productos[seccion].forEach((producto, index) => {
                 const item = document.createElement('div');
                 item.classList.add('item');
 
+                if (producto.vendido) {
+                    item.classList.add('estado-vendido');
+                } else if (producto.reservado) {
+                    item.classList.add('estado-reservado');
+                }
+
+                const badge = producto.vendido
+                    ? '<span class="badge-estado badge-vendido">Vendido</span>'
+                    : (producto.reservado ? '<span class="badge-estado badge-reservado">Reservado</span>' : '');
+
+
                 item.innerHTML = `
-                <a href="${producto.imagen}" data-lightbox="${seccion}" data-title="${producto.nombre} - ${producto.descripcion} - $${producto.precio}">
-                   
-                         <img  src="${producto.imagen}" alt="${producto.nombre}">
-                   
-                    
-                </a>
+                
+                <img  src="${producto.imagen}" alt="${producto.nombre}" >
+                ${badge}
                 <h3>${producto.nombre}</h3>
                 <p>${producto.descripcion}</p>
                 <p><strong>Precio:</strong> $${producto.precio}</p>
-                <button onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})">Agregar</button>
+                
+                <button 
+                    onclick="agregarAlCarrito('${producto.nombre}', ${producto.precio})" 
+                    ${producto.vendido || producto.reservado ? 'disabled' : ''}>
+                    ${producto.vendido ? 'Vendido' : (producto.reservado ? 'Reservado' : 'Agregar')}
+                </button>
+                
+                
                 `;
 
                 galeria.appendChild(item);

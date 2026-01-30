@@ -10928,9 +10928,13 @@ p {
   .about-heading .about-heading-img {
     position: relative;
     z-index: 0;
+    max-width: 640px; /* controla el ancho máximo en desktop */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .about-heading .about-heading-content {
-    margin-top: -5rem;
+    margin-top: -4rem;
     position: relative;
     z-index: 1;
   }
@@ -11080,12 +11084,12 @@ p {
   font-weight: bold;
   cursor: pointer;
 }
-
 .galeria {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
+  align-items: stretch;
 }
 .modal button{
   padding: 5px 10px;
@@ -11096,19 +11100,24 @@ p {
   cursor: pointer;
   margin-top: 5px;
 }
-
 .item {
-  width: 200px;
-  border: 1px solid #198754;
-  padding: 10px;
-  border-radius: 5px;
+  width: 220px;
+  border: 1px solid rgba(25, 137, 67, 0.35);
+  padding: 14px;
+  border-radius: 12px;
   text-align: center;
-  
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .item img {
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
   /* Aplica el efecto de zoom al pasar el cursor */
@@ -11125,16 +11134,62 @@ p {
 
 .item p {
   margin: 5px 0;
+  font-size: 0.9rem;
 }
 
 .item button {
-  padding: 5px 10px;
+  padding: 6px 12px;
   background-color: #198943;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 999px;
   cursor: pointer;
   margin-top: 5px;
+  font-size: 0.85rem;
+}
+
+.item button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.badge-estado {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge-reservado {
+  background-color: rgba(230, 167, 86, 0.95); /* naranja de la marca */
+}
+
+.badge-vendido {
+  background-color: rgba(33, 37, 41, 0.95); /* gris casi negro */
+}
+
+.estado-vendido img {
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+.modal-titulo {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 #lista-compras {
