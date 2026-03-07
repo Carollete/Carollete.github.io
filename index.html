@@ -59,7 +59,10 @@ git --version<!DOCTYPE html>
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/perchero.jpg" alt="..." />
 					</a>
                     <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada vez que adquieras una prenda, es dar una nueva oportunidad de valor a la misma.</p></div>
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Cada vez que adquieras una prenda, es dar una nueva oportunidad de valor a la misma.</p>
+                            <a href="#" class="btn btn-primary mt-3" onclick="mostrarModal('armario'); return false;">Ver prendas del armario</a>
+                        </div>
                     </div>
                 </div>
             </div>F
@@ -86,7 +89,10 @@ git --version<!DOCTYPE html>
                     </a>
                    
                     <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Elige lo que más calza contigo. ¿Qué paso darás hoy?</p></div>
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Elige lo que más calza contigo. ¿Qué paso darás hoy?</p>
+                            <a href="#" class="btn btn-primary mt-3" onclick="mostrarModal('zapatero'); return false;">Ver calzados</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +119,9 @@ git --version<!DOCTYPE html>
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/repisa.jpg" alt="..." />
                     </a>
                     <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada objeto que te rodea dice algo de tí, escógelo con amor y consciencia.</p></div>
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Cada objeto que te rodea dice algo de tí, escógelo con amor y consciencia.</p>
+                            <a href="#" class="btn btn-primary mt-3" onclick="mostrarModal('decoracion'); return false;">Ver objetos de decoración</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +147,10 @@ git --version<!DOCTYPE html>
                         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/garaje.jpg" alt="..." />
 					</a>
                     <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Cada cosa en su lugar, hace al todo en armonía funcionar.</p></div>
+                        
+                        <div class="bg-faded p-5 rounded">
+                            <p class="mb-0">Cada cosa en su lugar, hace al todo en armonía funcionar.</p>
+                            <a href="#" class="btn btn-primary mt-3" onclick="mostrarModal('deposito'); return false;">Ver objetos del depósito</a>
                     </div>
                 </div>
             </div>F
@@ -161,7 +172,7 @@ git --version<!DOCTYPE html>
         </section>
         
         <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Hecho por Gavilán Carolina 2025</p></div>
+            <div class="container"><p class="m-0 small">Copyright &copy; Hecho por Gavilán Carolina 2026</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -197,11 +208,51 @@ git --version<!DOCTYPE html>
             const productos = {
             armario: [
                 {
+                nombre: 'Vestido Azul Fresco',
+                descripcion: 'Talle 1',
+                precio: 5000,
+                imagen: 'assets/azul.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Vestido Verano',
+                descripcion: 'Talle 1, Tela Modal',
+                precio: 5000,
+                imagen: 'assets/modal.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Camisa Pétalos',
+                descripcion: 'Talle 2',
+                precio: 5000,
+                imagen: 'assets/flor.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Blusa Perla',
+                descripcion: 'Talle 1',
+                precio: 5000,
+                imagen: 'assets/perla.png',
+                reservado: false,
+                vendido: false
+                },
+                {
+                nombre: 'Mochila River Plate',
+                descripcion: 'Tela Jean',
+                precio: 15000,
+                imagen: 'assets/mochila.png',
+                reservado: false,
+                vendido: false
+                },
+                {
                 nombre: 'Cartera Roja',
                 descripcion: '8x8,5x4 cm.',
                 precio: 1000,
                 imagen: 'assets/carterita.png',
-                reservado: true,
+                reservado: false,
                 vendido: false
                 },
                 {
@@ -211,25 +262,7 @@ git --version<!DOCTYPE html>
                 imagen: 'assets/yacare.png',
                 reservado: false,
                 vendido: false
-                }
-/*                 {
-                nombre: 'Buzo',
-                descripcion: 'Buzo Otoño, Invierno, talla M.',
-                precio: 3500,
-                imagen: 'assets/buzo.jpg'
-                },
-                {
-                nombre: 'Vestido Rojo',
-                descripcion: 'Vestido elegante color rojo, talla S.',
-                precio: 4000,
-                imagen: 'assets/carterita.jpg'
-                },
-                {
-                nombre: 'Vestido Rojo',
-                descripcion: 'Vestido elegante color rojo, talla S.',
-                precio: 4000,
-                imagen: 'assets/carterita.jpg'
-                }, */
+                } 
             ],
             deposito: [
                 {
