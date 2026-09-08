@@ -1,9 +1,9 @@
 :root {
-  --lavender-gray: #a796da;
-  --smoke-blue: #421de6d7;
-  --bone-white: #635946;
-  --stone-gray: #fcfcfb;
-  --soft-gold: #c9b27a;
+  --lavender-gray: #aabf0b;
+  --smoke-blue: #514ea6;
+  --bone-white: #44732F;
+  --stone-gray: #f2f2f2;
+  --soft-gold: #bFb636;
   --rgb-lavender-gray: 199, 193, 217;
   --rgb-smoke-blue: 174, 184, 199;
   --rgb-bone-white: 248, 246, 242;
@@ -15,7 +15,7 @@
   --sage: var(--smoke-blue);
   --wine: var(--stone-gray);
   --slate: var(--stone-gray);
-  --surface: #d9d5e4;
+  --surface: #f2f2f2;
   --surface-2: #e5e1ec;
   --line: rgba(var(--rgb-soft-gold), 0.28);
 }
@@ -34,7 +34,7 @@ body {
 
 body {
   min-height: 100vh;
-  font-family: "Jost", sans-serif;
+  font-family: "Libre Baskerville", serif;
   background: var(--ink);
   color: var(--ivory);
   line-height: 1.6;
@@ -174,7 +174,7 @@ button:focus-visible {
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(237, 229, 208, 0.6);
+  color: rgba(16, 16, 16, 0.6);
   transition: color 0.3s ease;
 }
 
@@ -239,7 +239,7 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(237, 229, 208, 0.75);
+  color: rgba(108, 85, 26, 0.75);
   transition: all 0.3s ease;
 }
 
@@ -287,7 +287,7 @@ button:focus-visible {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 12px;
-  color: rgba(122, 140, 110, 0.65);
+  color: rgba(234, 238, 232, 0.65);
 }
 
 .footer-links {
@@ -299,7 +299,7 @@ button:focus-visible {
 .footer-links a {
   font-size: 10px;
   letter-spacing: 0.18em;
-  color: rgba(237, 229, 208, 0.4);
+  color: rgba(16, 16, 16, 0.6);
 }
 
 .footer-right {
@@ -399,7 +399,7 @@ button:focus-visible {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 15px;
-  color: rgba(122, 140, 110, 0.85);
+  color: #f2f2f2;
   margin: 0;
   line-height: 1.5;
 }
@@ -408,7 +408,7 @@ button:focus-visible {
   position: relative;
   width: 500px;
   height: 500px;
-  margin-top: 170px;
+  margin-top: 10px;
 }
 
 .tarot-card {
@@ -488,7 +488,7 @@ button:focus-visible {
 .card-symbol {
   font-family: "Libre Baskerville", serif;
   font-size: 44px;
-  color: rgba(184, 149, 42, 0.75);
+  color: rgba(239, 199, 78, 0.75);
   line-height: 1;
 }
 
@@ -954,7 +954,7 @@ button:focus-visible {
 
 .flipbook-page p {
   margin: 0 0 14px;
-  color: rgba(237, 229, 208, 0.88);
+  color: rgba(57, 43, 10, 0.88);
   text-wrap: pretty;
 }
 
@@ -1138,7 +1138,7 @@ button:focus-visible {
 
 .ornament-line {
   margin: 24px 0;
-  color: rgba(184, 149, 42, 0.65);
+  color: rgba(243, 191, 37, 0.65);
   letter-spacing: 0.26em;
 }
 
@@ -1168,7 +1168,7 @@ body {
 .gallery-caption,
 .flipbook-page p,
 .simple-page p {
-  color: rgba(var(--rgb-stone-gray), 0.9);
+  color: rgba(var(#514ea6), 0.9);
 }
 
 .nav-brand__text,
@@ -1180,12 +1180,12 @@ body {
 .mock-cover__title,
 .card-symbol,
 .redeal-btn {
-  color: var(--soft-gold);
+  color: #44732F;
 }
 
 .hero-eyebrow,
 .footer-tagline {
-  color: rgba(var(--rgb-smoke-blue), 0.95);
+  color: rgba(var(--rgb-bone-white), 0.95);
 }
 
 .hero-title,
@@ -1283,7 +1283,7 @@ body {
 
 /* === RESPONSIVE === */
 
-@media (max-width: 900px) {
+@media (max-width:50px) {
   .site-nav__inner {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -1315,7 +1315,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     gap: 22px;
     margin-top: 210px;
   }
