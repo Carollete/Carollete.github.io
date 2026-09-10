@@ -1283,7 +1283,7 @@ body {
 
 /* === RESPONSIVE === */
 
-@media (max-width:100px) {
+@media (max-width:900px) {
   .site-nav__inner {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -1355,7 +1355,8 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 
+600px) {
   .nav-links a {
     font-size: 10px;
   }
