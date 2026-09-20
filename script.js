@@ -219,7 +219,7 @@ const secciones = {
         }
       ]
       
-    }, 
+    } 
     /* cosmos: {
       titulo: "Imágenes del Cosmos",
       tipo: "galeria",
@@ -242,14 +242,14 @@ const secciones = {
         }
       ]
     }, */
-    taller_confianza_creativa: {
+/*     taller_confianza_creativa: {
       titulo: "Taller Confianza Creativa",
       tipo: "pdf",
       pdfUrl: "assets/Taller_CONFIANZA_CREATIVA.pdf",
       paginasTotales: 1,
       marcaAgua: "REVISTA ORACULO · USO PERSONAL",
       watermarkEnabled: true
-    }
+    } */
 };
 
 // === STARS ===
